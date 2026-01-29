@@ -1,1 +1,48 @@
 
+Your CLI should offer the following:
+
+Add Employee:
+
+Input: Employee ID (integer) and Name (string).
+
+Logic: You must insert the new node in the correct position to maintain the BST property:
+
+IDs smaller than the current node go to the Left.
+
+IDs larger than the current node go to the Right.
+
+Constraint: No duplicate IDs allowed.
+
+Search Employee:
+
+Input: ID.
+
+Logic: Traverse the tree efficiently (go left or right based on the value) to find the employee. Do not check every node.
+
+Output: If found, print the Name. If not, print "Employee not found."
+
+View All (Sorted):
+
+Display all employees sorted by ID (Ascending).
+
+Hint: You cannot sort a list here. You must use In-Order Traversal (Left -> Root -> Right) to print them naturally in order.
+
+Analyze Hierarchy:
+
+Print the "Height" of the tree (how many levels deep the data goes). This is a classic recursion problem.
+
+Exit:
+
+Clean up memory (Free the tree).
+
+
+
+Recursion: You must use recursive functions for:
+
+Insertion (insertNode)
+
+Printing (inOrderTraversal)
+
+Height Calculation (calculateHeight)
+
+No Global Head: Try to handle the root pointer inside main and pass it to your functions (e.g., root = insert(root, id, name);)
