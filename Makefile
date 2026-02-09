@@ -3,9 +3,9 @@ all: main
 
 CC = clang
 
-CCFLAGS = -Wextra -Wall -Wpendatic
+CCFLAGS = -Wextra -Wall -Wpedantic
 
-SRC = src/main.c
+SRC = src/main.c -lcdk -lncurses
 
 PROGRAM = staffsync
 
@@ -16,7 +16,7 @@ debug:$(SRC)
 	$(CC) $(CCFLAGS) $(SRC) -o $(PROGRAM) -g
 
 run:
-	./staffsync
+	./$(PROGRAM)
 
 clean:
-	rm -f $(PROGAM)
+	rm -f $(PROGRAM)
