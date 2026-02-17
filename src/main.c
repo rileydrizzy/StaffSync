@@ -42,7 +42,7 @@ int main(void)
     switch (choice)
     {
     case 0:
-      //ui_register_staff(cdkScreen);
+      ui_register_staff(cdkScreen); //FIXME screen does not refresh to new page
       break;
     case 1:
       //ui_view_all_staff(cdkScreen);
