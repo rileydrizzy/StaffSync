@@ -59,3 +59,7 @@ dkms.conf
 
 # Program executable
 staffsync
+
+#
+logs/
+zlog-latest-stable/
