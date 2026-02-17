@@ -1,5 +1,6 @@
 #include <cdk.h>
 #include "display.h"
+#include "zlog.h"
 
 /* ---------- Main Menu ---------- */
 
