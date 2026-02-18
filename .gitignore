@@ -61,5 +61,6 @@ dkms.conf
 staffsync
 
 #
-logs/
-zlog-latest-stable/
+logs/*
+!logs/.gitkeep
+zlog-latest-stable/*
