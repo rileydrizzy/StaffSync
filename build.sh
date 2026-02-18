@@ -8,3 +8,5 @@ cd zlog-latest-stable
 make
 sudo make install
 echo "Zlog setup" 
+cd ..
+sudo ldconfig
