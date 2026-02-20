@@ -36,6 +36,8 @@ static void show_info(CDKSCREEN *screen, const char *title, const char *msg)
 /* Register Staff UI: collects inputs but DOES NOT save anything. */
 static void ui_register_staff(CDKSCREEN *screen)
 {
+
+    eraseCDKScreen(screen);
     CDKENTRY *idEntry = 0;
     CDKENTRY *nameEntry = 0;
     CDKENTRY *deptEntry = 0;
@@ -46,6 +48,7 @@ static void ui_register_staff(CDKSCREEN *screen)
 
     /* Title */
     show_info(screen, "Register Staff", "UI only. Inputs will NOT be saved.");
+    screen = eraseCDKScreen(screen);
 
     idEntry = newCDKEntry(screen, CENTER, 6, "<B>Staff ID: ", " ", A_NORMAL, '.',
                           vMIXED, 1, 64, 128, TRUE, FALSE);

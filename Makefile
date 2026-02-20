@@ -3,7 +3,7 @@ all: main
 
 CC = clang
 
-CCFLAGS = -Wextra -Wall -Wpedantic
+CCFLAGS = -Wextra -Wall -Wpedantic #-lzlog
 
 SRC = src/main.c -lcdk -lncurses
 

@@ -46,3 +46,10 @@ Printing (inOrderTraversal)
 Height Calculation (calculateHeight)
 
 No Global Head: Try to handle the root pointer inside main and pass it to your functions (e.g., root = insert(root, id, name);)
+
+
+TODO LIST
+1. Add Zlog to project
+2. Write the build script (opt)
+3. Work on Display on Menu
+4. Impl the backend Logic
